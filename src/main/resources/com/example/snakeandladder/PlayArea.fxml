@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.snakeandladder.PlayAreaController"
+            prefHeight="400.0" prefWidth="600.0">
+<children>
+    <ImageView fitHeight="500" fitWidth="500" layoutX="300" >
+        <image>
+            <Image url="@gameboard.jpeg"/>
+        </image>
+    </ImageView>
+    <ImageView fitHeight="50" fitWidth="20" layoutX="50" layoutY="300">
+        <image>
+            <Image url="@red.png"/>
+        </image>
+    </ImageView>
+    <Text layoutX="150" layoutY="325" text="Player 1"></Text>
+    <Text layoutX="150" layoutY="425" text="Player 2"></Text>
+    <ImageView  fitHeight="50" fitWidth="20" layoutX="50" layoutY="400">
+        <image>
+            <Image url="@blue.png"/>
+        </image>
+    </ImageView>
+    <ImageView fx:id="first" fitHeight="50" fitWidth="50" layoutX="150" layoutY="150" onMouseClicked="#roll">
+        <image>
+            <Image url="@dice.png"/>
+        </image>
+    </ImageView>
+    <ImageView fx:id="second" fitHeight="50" fitWidth="50" layoutX="100" layoutY="150" onMouseClicked="#roll">
+        <image>
+            <Image url="@dice.png"/>
+        </image>
+    </ImageView>
+    <Text fx:id="changeturn" layoutX="150" layoutY="100" text="player 1's Turn"></Text>
+    <Text fx:id="number" layoutX="170" layoutY="230"></Text>
+    <ImageView fx:id="player1" fitHeight="50" fitWidth="20" layoutX="250" layoutY="450">
+        <image>
+            <Image url="@red.png"/>
+        </image>
+    </ImageView>
+    <ImageView fx:id="player2" fitHeight="50" fitWidth="20" layoutX="270" layoutY="450">
+        <image>
+            <Image url="@blue.png"/>
+        </image>
+    </ImageView>
+</children>
+</AnchorPane>
